@@ -1,0 +1,8 @@
+{
+  "title": "Hello world",
+  "variable-example": "Using a variable {{count}}",
+  "about": "about",
+  "language-name-ar": "عربي",
+  "language-name-tr": "Türkçe",
+  "language-name-en": "English"
+}
