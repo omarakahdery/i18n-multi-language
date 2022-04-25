@@ -5,12 +5,12 @@ import useTranslation from "next-translate/useTranslation";
 import { useState } from "react";
 import i18nConfig from "../i18n.json";
 import Link from "next/link";
+import Cons from "../components/Cons";
 
 const { locales } = i18nConfig;
 export default function Home() {
   const [num, setNum] = useState(1);
   const router = useRouter();
-  console.log(router);
   const { t, lang } = useTranslation();
   return (
     <div className={styles.container}>
@@ -29,7 +29,7 @@ export default function Home() {
       <main className={styles.main}>
         <select
           onChange={(e) => {
-            router.push(`/${e.target.value}`, null, {
+            router.push(`/`, null, {
               locale: e.target.value,
             });
           }}
@@ -50,9 +50,14 @@ export default function Home() {
         <h3 className={styles.title}>
           {t("common:variable-example", { count: num })}{" "}
         </h3>
+        <p>jjj</p>
+        <Cons get={t("common:variable-example", { count: num })} />
         <br></br>
         <button onClick={() => setNum((p) => p + 1)}> ++++</button>
         <Link href="/about">about</Link>
+        <Link href="/text">text</Link>
+        <Link href="/polici">polici</Link>
+        <Link href="/contact">contact</Link>
       </main>
     </div>
   );

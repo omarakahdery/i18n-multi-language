@@ -5,7 +5,7 @@ import useTranslation from "next-translate/useTranslation";
 
 export default function Home() {
   const router = useRouter();
-  console.log(router);
+
   const { t } = useTranslation();
   return (
     <div className={styles.container}>
