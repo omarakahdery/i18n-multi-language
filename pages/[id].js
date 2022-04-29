@@ -40,7 +40,7 @@ export async function getStaticPaths({ locales }) {
       paths.push({ params: { id }, locale });
     }
   }
-  console.log(paths);
+
   return {
     paths,
     fallback: false,
@@ -60,7 +60,7 @@ export const getStaticProps = async ({ params, locale }) => {
     .use(html)
     .process(matterResult.content);
   const contentHtml = processedContent.toString();
-  console.log(contentHtml);
+
   return {
     props: { id, contentHtml },
   };

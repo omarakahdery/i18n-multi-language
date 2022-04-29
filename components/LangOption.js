@@ -7,7 +7,7 @@ const { locales } = i18nConfig;
 
 const LangOption = () => {
   const router = useRouter();
-  console.log(router);
+
   const { t, lang } = useTranslation();
   return (
     <div>
