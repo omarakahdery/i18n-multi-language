@@ -2,6 +2,7 @@ import Head from "next/head";
 import { useRouter } from "next/router";
 import styles from "../styles/Home.module.css";
 import useTranslation from "next-translate/useTranslation";
+import LangOption from "../components/LangOption";
 
 export default function Home() {
   const router = useRouter();
@@ -22,15 +23,6 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-        <select
-          onChange={(e) => {
-            lang = e.target.value;
-          }}
-        >
-          <option value="en">en</option>
-          <option value="ar">ar</option>
-          <option value="tr">tr</option>
-        </select>
         <h1 className={styles.title}>{t("common:about")} </h1>
       </main>
     </div>

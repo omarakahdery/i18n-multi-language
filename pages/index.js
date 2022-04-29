@@ -1,19 +1,13 @@
 import Head from "next/head";
-import { useRouter } from "next/router";
 import styles from "../styles/Home.module.css";
 import useTranslation from "next-translate/useTranslation";
-import { useState } from "react";
-import i18nConfig from "../i18n.json";
-import Link from "next/link";
-import Cons from "../components/Cons";
 
-const { locales } = i18nConfig;
 export default function Home() {
-  const [num, setNum] = useState(1);
-  const router = useRouter();
   const { t, lang } = useTranslation();
+  let style;
+  lang === "ar" ? (style = { direction: "rtl", textAlign: "right" }) : null;
   return (
-    <div className={styles.container}>
+    <div>
       <Head>
         <title>Multi Language</title>
         <meta
@@ -27,37 +21,18 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-        <select
-          onChange={(e) => {
-            router.push(`/`, null, {
-              locale: e.target.value,
-            });
-          }}
-        >
-          <option> {t(`common:language-name-${lang}`)}</option>
-          {locales.map((lng) => {
-            if (lng === lang) return null;
-
-            return (
-              <option value={lng} key={lng}>
-                {t(`common:language-name-${lng}`)}
-              </option>
-            );
-          })}
-        </select>
-        {<p>now lang {lang}</p>}
         <h1 className={styles.title}>{t("common:title")} </h1>
-        <h3 className={styles.title}>
-          {t("common:variable-example", { count: num })}{" "}
-        </h3>
-        <p>jjj</p>
-        <Cons get={t("common:variable-example", { count: num })} />
-        <br></br>
-        <button onClick={() => setNum((p) => p + 1)}> ++++</button>
-        <Link href="/about">about</Link>
-        <Link href="/text">text</Link>
-        <Link href="/polici">polici</Link>
-        <Link href="/contact">contact</Link>
+        <br />
+        <p className={styles.p} style={style}>
+          {t("common:variable-example")}
+        </p>
+        {
+          <h3>
+            {t("common:prev-language", {
+              lang: t(`common:language-name-${lang}`),
+            })}{" "}
+          </h3>
+        }
       </main>
     </div>
   );

@@ -1,0 +1,9 @@
+.main {
+  margin: 3rem auto;
+  width: 90%;
+
+  max-width: 40rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

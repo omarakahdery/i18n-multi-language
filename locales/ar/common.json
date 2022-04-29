@@ -1,8 +1,13 @@
 {
-  "title": "مرحبا بالعالم",
-  "variable-example": "استخدم القيمة {{count}}",
-  "about": "حول",
-  "language-name-ar": "عربي",
+  "title": "تطبيق متعدد اللغات",
+  "variable-example": "مرحبا ، يقوم هذا التطبيق بتغيير لغة الصفحات تلقائيًا  وفقًا لاكثر لغة يفضلها المستخدم في المتصفح. بالإضافة إلى هذا فان التطبيق ينتج صفحات ثابتة باستخدام لغة المارك داون وفقًا لتفضيلات لغة المستخدم ايضا.",
+  "about": "صفحة حول",
+  "home": "الصفحة الرئيسية",
+  "language-name-ar": "العربية",
   "language-name-tr": "Türkçe",
-  "language-name-en": "English"
+  "language-name-en": "English",
+  "Contact": "للتواصل",
+  "Privacy-Policy": "سياسة الخصوصية",
+  "Terms-of-Use": "شروط استخدام",
+  "prev-language": " انت الان تستخدم اللغة {{lang}}"
 }

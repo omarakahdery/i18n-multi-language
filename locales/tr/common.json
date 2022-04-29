@@ -1,8 +1,13 @@
 {
-  "title": "Merhaba Dunya",
-  "variable-example": "Bu Değişken kullan {{count}}",
-  "about": "Hakimizda",
+  "title": "Çok Dilli Uygulama",
+  "variable-example": "Merhaba, bu uygulama kullanıcının tarayıcıda  en çok tercih ettiği dile  göre sayfaların dilini otomatik olarak değiştirmektedir. Yanı sıra markdown kullanarak yine kullanıcının tercihine göre farklı dillerde statik sayfalar üretmektedir",
+  "about": "Hakında sayfası",
+  "home": "Anasayfa",
   "language-name-ar": "عربي",
   "language-name-tr": "Türkçe",
-  "language-name-en": "English"
+  "language-name-en": "English",
+  "Contact": "İletişim",
+  "Privacy-Policy": "Gizlilik Politikası",
+  "Terms-of-Use": "Kullanım Koşulları",
+  "prev-language": "Şuan {{lang}} Dili Kullanılmaktadır"
 }

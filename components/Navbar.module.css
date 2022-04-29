@@ -1,0 +1,16 @@
+.nav {
+  background-color: rgb(204, 146, 146);
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.div {
+  font-size: 1rem;
+  font-weight: 500;
+}
+.logo {
+  font-size: 2.5rem;
+  font-weight: 600;
+  cursor: pointer;
+}

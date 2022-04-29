@@ -1,8 +1,14 @@
 {
-  "title": "Hello world",
-  "variable-example": "Using a variable {{count}}",
-  "about": "about",
+  "title": "Multi language Application",
+  "variable-example": "Hello, this application automatically changes the language of the pages according to the language that the user prefers most in the browser. In addition, using markdown to produce static pages in different languages according to the user's language preference also.",
+  "about": "about Page",
+  "home": "Home",
+
   "language-name-ar": "عربي",
   "language-name-tr": "Türkçe",
-  "language-name-en": "English"
+  "language-name-en": "English",
+  "Contact": "Contact",
+  "Privacy-Policy": "Privacy Policy",
+  "Terms-of-Use": "Terms of Use",
+  "prev-language": "You Using {{lang}} language now"
 }
