@@ -6,7 +6,12 @@ I Built this with [Next.js](https://nextjs.org) and deployed it in to [vercel](h
 
 ###### About
 
-This application automatically changes the language of the pages according to the language that the user prefers most in the browser. In addition, using markdown to produce static pages in different languages according to the user's language preference also.
+# This application automatically changes the language of the pages according to the language that the user prefers most in the browser. In addition, using markdown to produce static pages in different languages according to the user's language preference also.
+
+<br/>
+<br/>
+<br/>
+<br/>
 
 ## Getting Started
 
