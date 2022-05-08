@@ -1,9 +1,12 @@
-## multi-language-app using Nextjs Internationalized Routing i18n
-#### App Link => https://multi-language-app-omar.vercel.app/
+## Multi Language App using Nextjs Internationalized Routing i18n
 
-this application automatically changes the language of the pages according to the language that the user prefers most in the browser. In addition, using markdown to produce static pages in different languages according to the user's language preference also.
+I Built this with [Next.js](https://nextjs.org) and deployed it in to [vercel](https://vercel.com)
 
+###### App Link => https://multi-language-app-omar.vercel.app/
 
+###### About
+
+This application automatically changes the language of the pages according to the language that the user prefers most in the browser. In addition, using markdown to produce static pages in different languages according to the user's language preference also.
 
 ## Getting Started
 
